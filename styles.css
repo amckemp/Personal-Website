@@ -1,0 +1,20 @@
+p {
+    color: green;
+}
+
+* {
+    background-color: #9EB23B;
+}
+
+.hi {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    size: 32px;
+}
+
+img {
+    height: auto;
+    width: 500px;
+    align-self: center;
+}
