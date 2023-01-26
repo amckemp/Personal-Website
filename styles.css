@@ -5,6 +5,7 @@
 p {
     color: #8aa62e;
     font-size: 32px;
+    margin-left: 35px;
 }
 
 body {
@@ -20,13 +21,40 @@ body {
     font-size: 180px;
 }
 
-.hi:hover {
+.header:hover {
+    color: #FCF9C6;
+}
+
+.htop {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.hbottom {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.scroll {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.scroll:hover {
     color: #FCF9C6;
 }
 
 img {
     height: auto;
     width: 500px;
+    display: inline;
+    border-radius: 35px;
+    float: right;
+    margin-right: 90px;
+}
+
+.welcome {
+    display: inline;
 }
 
 ul {
@@ -59,7 +87,7 @@ li a {
     color: #FCF9C6;
     text-align: center;
     font-size: 24px;
-    padding: 24px 24px;
+    padding: 18px 18px;
     text-decoration: none;
 }
 
@@ -81,17 +109,17 @@ li a:hover {
 
 .resume {
 
-    margin-top: 10px;
+    margin-top: 8px;
     margin-right: 15px;
 
-    border-radius: 15px;
+    border-radius: 10px;
     border: 8px #FCF9C6;
 
     border: 3px solid #FCF9C6;
     background-color: #C7D36F;
     color: #FCF9C6;
-    padding: 14px 28px;
-    font-size: 20px;
+    padding: 8px 24px;
+    font-size: 24px;
     cursor: pointer;
 
 }
