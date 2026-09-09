@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Rubik+Mono+One&family=IBM+Plex+Mono:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Bungee', sans-serif;
+}
+
+p {
+    color: #8aa62e;
+    font-size: 32px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.left {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #C7D36F;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+a {
+    display: flex;
+    color: #FCF9C6;
+    padding: 18px 18px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #FCF9C6;
+    color: #9EB23B;
+  }
+
+.active {
+    background-color: #FCF9C6;
+    color: #9EB23B;
+}
+
+.resume, button:hover {
+    background-color: #FCF9C6;
+    color: #9EB23B;
+  }
+
+.resume {
+    margin-top: 8px;
+    margin-right: 15px;
+
+    border-radius: 10px;
+
+    border: 3px solid #FCF9C6;
+    background-color: #C7D36F;
+    color: #FCF9C6;
+    padding: 8px 24px;
+    font-size: 24px;
+
+    font-family: 'Bungee', sans-serif;
+}
+
+.empty {
+    font-size: 24px;
+    padding: 0px;
+}
+
+body {
+    background-color: #C7D36F;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    padding: 4%;
+    margin: 0%;
+    text-align: center;
+    font-size: 180px;
+}
+
+.header > p{
+    text-align: center;
+    color: #8aa62e;
+    font-size: 180px;
+    padding: 0%;
+    margin: 0;
+}
+
+.header > p:hover {
+    color: #FCF9C6;
+}
+
+.scroll-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
+.arrow {
+    text-align: center;
+}
+
+.scroll-group > a {
+    text-decoration: none;
+    color: #8aa62e;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-group:hover .scroll{
+    color: #FCF9C6;
+}
+
+.scroll-group:hover .arrow{
+    color: #FCF9C6;
+}
+
+.arrow {
+    transform: rotate(180deg);
+}
+
+img {
+    height: 550px;
+    width: auto;
+    border-radius: 35px;
+}
+
+.about-me-section {
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 4%;
+    padding: 6.5% 4%;
+    padding-bottom: 7%;
+}
+
+.about-me-text {
+    width: 550px;
+}
+
+.about-me-text > .about-me-header {
+    font-size: 32px;
+}
+
+.about-me-text > .about-me-paragraph {
+    font-size: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.subtext {
+    font-size: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+#contact {
+    width: 80%;
+    height: 250px;
+    align-self: center;
+    padding: 3% 5%;
+    padding-bottom: 0%;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FCF9C6;
+    margin-bottom: 3%;
+    align-items: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+}
+
+.contact-link {
+    padding: 0;
+    padding-top: 3%;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    border-radius: 0;
+}
+
+.footer {
+    color:#8aa62e;
+    font-size: 18px;
+    font-family: 'IBM Plex Mono', monospace;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+.project-section {
+
+    padding-top: 4%;
+
+    color:#FCF9C6;
+    align-self: center;
+    width: 80%;
+
+}
+
+.project-title {
+    font-size: 32px;
+}
+
+.project {
+    display: flex;
+    align-content: space-between;
+    padding: 2%;
+
+    font-size: 24px;
+}
+
+.project-image {
+    height: 325px;
+}
+
+.project-text {
+    padding: 1%;
+}
+
+.project-description {
+    font-size: 18px;
+    color: #8aa62e;
+    font-family: 'IBM Plex Mono', monospace;
+
+    padding: 0px 18px;
+}
+
+.view-more-section {
+
+    align-items: space-between;
+    justify-content: center;
+
+    font-size: 20px;
+    color:#8aa62e;
+
+    border-style: solid;
+    border-color: #FCF9C6;
+    border-radius: 25px;
+    border-width: 4px;
+
+    margin: 3%;
+    padding: 3%;
+}
+
+.view-more {
+    padding: 18px;
+}
+
+.view-more-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.crochet-hero {
+    height: 68vh;
+    min-height: 420px;
+}
+
+.crochet-grid {
+    width: calc(100% - 64px);
+    max-width: 1400px;
+    margin: 0 auto 5%;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+.crochet-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #FCF9C6;
+    width: 100%;
+}
+
+.crochet-card-image {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+    height: auto;
+    border: 3px solid #FCF9C6;
+}
+
+.crochet-card-title {
+    margin-top: 12px;
+    color: #FCF9C6;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+html, body {
+    background: #fff;
+}
+
+body:has(.crochet-page-shell) {
+    background: #fff;
+}
+
+.crochet-page-shell {
+    --lh: 1.6;
+    background: #fff;
+    color: #111;
+    font: 1em / var(--lh) monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.crochet-page-shell * {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+}
+
+.crochet-page-shell a,
+.crochet-page-shell button,
+.crochet-page-shell p,
+.crochet-page-shell h1,
+.crochet-page-shell .crumb-link,
+.crochet-page-shell .crumb-current,
+.crochet-page-shell .crochet-card-title,
+.crochet-page-shell .crochet-body,
+.crochet-page-shell .footer {
+    font: inherit;
+}
+
+.crochet-page-shell .crochet-top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background: #fff;
+    border-bottom: none;
+    padding: 16px 0 0;
+    box-sizing: border-box;
+}
+
+.crochet-page-shell .home-link-only {
+    display: inline-flex;
+    align-items: center;
+    color: #111;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 28px;
+    border: none;
+    border-radius: 0;
+    background: #fff;
+}
+
+.crochet-page-shell .crochet-breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0 14px;
+    font-size: 1em;
+    color: #111;
+    font-family: monospace;
+}
+
+.crochet-page-shell .crumb-link,
+.crochet-page-shell .crumb-current,
+.crochet-page-shell .crumb-separator {
+    color: #111;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.crochet-page-shell .crumb-current {
+    color: #111;
+    text-transform: lowercase;
+}
+
+.crochet-page-shell .crumb-link {
+    text-transform: lowercase;
+}
+
+.crochet-page-shell .crochet-detail {
+    width: min(1100px, 86%);
+    margin: 0 auto 4rem;
+    padding-top: 40px;
+}
+
+.crochet-page-shell .crochet-detail-header {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.crochet-page-shell .crochet-detail-header h1 {
+    color: #111;
+    font-size: 1em;
+    line-height: var(--lh);
+    margin: 0;
+    text-transform: lowercase;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.crochet-page-shell .crochet-content {
+    width: 100%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.crochet-page-shell .crochet-carousel-wrapper {
+    float: left;
+    width: min(44%, 520px);
+    max-width: 520px;
+    min-width: 260px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.crochet-page-shell .crochet-carousel {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr) 52px;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.crochet-page-shell .carousel-arrow {
+    border: none;
+    background: #f2f2f2;
+    color: #111;
+    border-radius: 0;
+    width: 44px;
+    height: 44px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.crochet-page-shell .carousel-arrow:hover {
+    opacity: 0.7;
+}
+
+.crochet-page-shell .carousel-image-frame {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.crochet-page-shell .carousel-image-frame img {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0;
+    border: none;
+    height: auto;
+}
+
+.crochet-page-shell .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.crochet-page-shell .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(17, 17, 17, 0.25);
+    cursor: pointer;
+    padding: 0;
+}
+
+.crochet-page-shell .dot.active {
+    background: #111;
+}
+
+.crochet-page-shell .crochet-body {
+    display: block;
+    width: auto;
+    color: #111;
+    font-size: 1em;
+    line-height: var(--lh);
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+.crochet-page-shell .crochet-body p {
+    display: block;
+    width: auto;
+    margin: 0 0 1rem;
+    color: #111;
+    font-size: 1em;
+    line-height: var(--lh);
+    font-weight: 400;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    max-width: none;
+}
+
+.crochet-page-shell .contact-link {
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #111;
+    padding: 0 0 2px;
+    display: inline-flex;
+}
+
+.crochet-page-shell .crochet-hero {
+    height: auto;
+    min-height: 0;
+    padding: 8px 28px;
+    background: #fff;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.crochet-page-shell .header {
+    width: calc(100% - 28px);
+    padding: 24 0 12 0;
+    margin: 0;
+    text-align: left;
+    font-size: 1em;
+    line-height: var(--lh);
+}
+
+.crochet-page-shell .header > p {
+    text-align: left;
+    color: #111;
+    font-size: 1em;
+    line-height: var(--lh);
+    padding: 0;
+    margin: 0;
+    text-transform: lowercase;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.crochet-page-shell .crochet-grid {
+    width: calc(100vw - 56px);
+    max-width: calc(100vw - 56px);
+    margin: 0 auto 5%;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+    background: #fff;
+    flex: 1;
+}
+
+.crochet-page-shell .crochet-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    color: #111;
+    width: 100%;
+    padding: 0;
+    background: #fff;
+}
+
+.crochet-page-shell .crochet-card-image {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+    height: auto;
+    border: none;
+}
+
+.crochet-page-shell .crochet-card-title {
+    margin-top: 12px;
+    color: #111;
+    font-size: 1em;
+    line-height: var(--lh);
+    text-align: left;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+.crochet-page-shell .footer {
+    color: #111;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 2rem;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .crochet-page-shell .crochet-content {
+        display: block;
+    }
+
+    .crochet-page-shell .crochet-carousel-wrapper {
+        float: none;
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        margin: 0 auto 1rem;
+    }
+
+    .crochet-page-shell .crochet-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .crochet-page-shell .crochet-carousel {
+        grid-template-columns: 1fr;
+    }
+}
