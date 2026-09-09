@@ -328,9 +328,10 @@ img {
 }
 
 html, body {
-    background: #fff;
+    background: #C7D36F;
 }
 
+html:has(body .crochet-page-shell),
 body:has(.crochet-page-shell) {
     background: #fff;
 }
